@@ -1,0 +1,20 @@
+   <!DOCTYPE html>
+   <html lang="ru">
+   <head>
+     <meta charset="UTF-8">
+     <title>Браузерные проверки ПР3</title>
+     <style>
+       body { font-family: system-ui, sans-serif; padding: 20px; }
+       .pass { color: green; }
+       .fail { color: red; font-weight: bold; }
+       #results { white-space: pre-wrap; background: #f5f5f5; padding: 15px; border-radius: 4px; }
+     </style>
+   </head>
+   <body>
+     <h1>Автоматические проверки интерфейса</h1>
+     <div id="results">Запуск проверок...</div>
+     <iframe id="app-frame" src="index.html" style="display:none;"></iframe>
+     <script type="module" src="./checks/browser.checks.js"></script>
+   </body>
+   </html>
+
